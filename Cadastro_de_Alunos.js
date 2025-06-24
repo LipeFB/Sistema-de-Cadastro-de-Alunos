@@ -8,6 +8,7 @@ Seja Bem-vindo(a) ao SCA - Sistema de Cadastro de Alunos
 `)
 
 
+
 // Objeto -> Aluno, com todas as informacoes
 const aluno = {
   nome: "Felipe",
@@ -30,13 +31,15 @@ Notas: ${aluno.notas.join(" | ")}
 
 // Funcao que calcula e mostra na tela a media do(a) aluno(a) e indica se passou ou nao
 function calculoMedia (media) {
-  media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2]) / 3 ;                      // Calculo da Media
+  media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2]) / 3 ;   // Calculo da Media
 
-  let resultado = media >= 7 ? "APROVADO(A)" : "REPROVADO(A)";                          // Verifica aprov. (Com Oper. Tern.)
+  let resultado = media >= 7 ? "APROVADO(A)" : "REPROVADO(A)";       // Verifica se foi aprovado
+  
+  mediaFormatada = media.toFixed(1)
 
   console.log(`Resultado:
 
-O(a) aluno(a) ${aluno.nome}, atingiu a media anual de ${media} pontos, portanto foi 
+O(a) aluno(a) ${aluno.nome}, atingiu a media anual de ${mediaFormatada} pontos, portanto foi 
 
 --------------------------- ${resultado} ---------------------------
 `)
