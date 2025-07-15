@@ -1,4 +1,4 @@
-// Desafio - Cadastro de Aluno
+// Desafio - Sistema de Cadastro de Aluno
 
 // Mensagem de boas-vindas
 console.log(`
@@ -14,7 +14,7 @@ const aluno = {
   nome: "Felipe",
   idade: 17,
   curso: "Ensino Médio",
-  notas: [0, 0, 0]
+  notas: [10, 9.5, 8]
 };
 
 
@@ -30,7 +30,7 @@ Notas: ${aluno.notas.join(" | ")}
 
 
 // Funcao que calcula a media e mostra o resultado
-function calculoMedia (media) {
+function calculoMedia () {
   media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2]) / 3 ;
 
   let resultado = media >= 7 ? "APROVADO(A)" : "REPROVADO(A)";
