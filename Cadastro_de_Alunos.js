@@ -14,7 +14,7 @@ const aluno = {
   nome: "Felipe",
   idade: 17,
   curso: "Ensino Médio",
-  notas: [10, 9.5, 8]
+  notas: [0, 2, 8]
 };
 
 
